@@ -1,0 +1,156 @@
+body{
+  background-color: rgb(25, 25, 25);
+  color: white  ;
+}
+
+.App{
+  background-color: rgb(30, 30, 30);
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  padding: 0 2em;
+  background-color: rgb(30, 30, 30);
+}
+
+.categories ul{
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 14em 2em 14em;
+}
+
+.categories a{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.categories ul li{
+  font-size: 15px;
+  padding-left: 0.5em;
+  padding-right: 2em;
+}
+
+.categories :hover{
+  color: rgb(0, 187, 212);
+  transition-duration: 500ms;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo:hover{
+  transform: scale(106%);
+  transition-duration: 400ms;
+}
+
+.buttons{
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  bottom: 90%;
+  margin-right: 2em ;
+  position: sticky;
+  top: 0%;
+}
+
+.botonCarrito{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.botonCarrito:hover{
+  color: rgb(0, 187, 212);
+  transition-duration: 500ms;
+  cursor: pointer; 
+}
+
+.botonUser{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+}
+
+.botonUser:hover{
+  color: rgb(0, 187, 212);
+  transition-duration: 500ms;
+  cursor: pointer; 
+}
+
+.notificacionCarrito{
+  position: absolute;
+  background-color: rgb(219, 60, 114);
+  font-size: 0.6em;
+  border-radius: 10px;
+  padding: 0 0.3em;
+  margin-left: 1.2em;
+  bottom: 52%;
+}
+
+.itemCount{
+  display: flex;
+  align-items: center;
+}
+
+.itemCount button{
+  font-size: 1em;
+  display: flex;
+  height: 2.5em;
+  margin: 0 1em;
+  padding: 0 1em;
+  border-radius: 100px ;
+  background-color: rgb(219, 60, 114);
+  border: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemCount button:hover{
+  background-color: rgb(0, 187, 212);
+  transition-duration: 700ms;
+  cursor: pointer;
+}
+
+.productos{
+  display: flex;
+  padding: 2em ;
+}
+
+.cardProducto{
+  display: flex;
+  flex-direction: column;
+}
+
+.cardProducto img:hover{
+  cursor: pointer;
+  transform: scale(104%);
+  transition-duration: 500ms;
+}
+
+.cardProducto h3{
+  font-size: 1em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.productos .cardProducto img{
+  height: 300px;
+  border-radius: 10px;
+}
