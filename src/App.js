@@ -8,9 +8,8 @@ const App = () => {
   return (
     <>
     <NavBar />
-    <ItemListContainer />
-    {/* <ItemDetailContainer /> */}
-    <ItemCount />
+    {/* <ItemListContainer /> */}
+    <ItemDetailContainer />
     </>
   );
 }

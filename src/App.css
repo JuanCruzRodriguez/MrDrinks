@@ -1,28 +1,29 @@
 body{
-  background-color: rgb(25, 25, 25);
-  color: white  ;
+  background-color: white;
+  color: black  ;
 }
 
 .App{
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(40, 40, 40);
 }
 
 header{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0%;
-  padding: 0 2em;
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(40, 40, 40);
+  padding: 0 1em;
 }
 
 .categories ul{
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(40, 40, 40);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 14em 2em 14em;
+  letter-spacing: 0.2em;
+  margin-right: 6em;
 }
 
 .categories a{
@@ -42,13 +43,14 @@ ul{
 }
 
 .categories :hover{
-  color: rgb(0, 187, 212);
+  color: rgb(150, 150, 150);
   transition-duration: 500ms;
 }
 
 .logo{
     display: flex;
     justify-content: center;
+    margin-left: 2em;
 }
 
 .logo:hover{
@@ -57,13 +59,7 @@ ul{
 }
 
 .buttons{
-  display: flex;
-  position: absolute;
-  justify-content: end;
-  bottom: 90%;
-  margin-right: 2em ;
-  position: sticky;
-  top: 0%;
+  margin-right: 2em;
 }
 
 .botonCarrito{
@@ -72,10 +68,11 @@ ul{
   border: none;
   font-size: 1.5em;
   margin-right: 1em;
+  padding-bottom: 0.5em;
 }
 
 .botonCarrito:hover{
-  color: rgb(0, 187, 212);
+  color: rgb(150, 150, 150);
   transition-duration: 500ms;
   cursor: pointer; 
 }
@@ -88,19 +85,20 @@ ul{
 }
 
 .botonUser:hover{
-  color: rgb(0, 187, 212);
+  color: rgb(150, 150, 150);
   transition-duration: 500ms;
   cursor: pointer; 
 }
 
 .notificacionCarrito{
   position: absolute;
-  background-color: rgb(219, 60, 114);
+  background-color: rgb(196, 183, 102);
+  color: black;
   font-size: 0.6em;
   border-radius: 10px;
   padding: 0 0.3em;
-  margin-left: 1.2em;
-  bottom: 52%;
+  margin-left: 1.7em;
+  bottom: 54%;
 }
 
 .itemCount{
@@ -115,7 +113,7 @@ ul{
   margin: 0 1em;
   padding: 0 1em;
   border-radius: 100px ;
-  background-color: rgb(219, 60, 114);
+  background-color: rgb(40, 40, 40);
   border: none;
   color: white;
   justify-content: center;
@@ -123,8 +121,8 @@ ul{
 }
 
 .itemCount button:hover{
-  background-color: rgb(0, 187, 212);
-  transition-duration: 700ms;
+  background-color: rgb(100, 100, 100);
+  transition-duration: 400ms;
   cursor: pointer;
 }
 
@@ -153,4 +151,37 @@ ul{
 .productos .cardProducto img{
   height: 300px;
   border-radius: 10px;
+}
+
+.divProducto{
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tituloImagen{
+  padding-left: 5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.precioStock{
+  padding-right: 35em;
+  padding-top: 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloProducto{
+  font-size: 2em;
+}
+
+.precioProducto{
+  font-size: 2em;
+  padding-left: 0.5em;
+}
+
+.stockProducto{
+  font-size: 1em;
+  margin-left: 1em;
 }

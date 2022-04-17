@@ -7,7 +7,7 @@ const ItemDetailContainer = () => {
     const [dato, setDato] = useState({});
 
     useEffect(() => {
-        customFetch(2000, products[3])
+        customFetch(2000, products[1])
             .then(result => setDato(result))
             .catch(err => console.log(err))
     }, []);

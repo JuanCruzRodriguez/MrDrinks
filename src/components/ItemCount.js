@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const ItemCount = ({ stock = 10, initial = 1, onAdd}) => {
+const ItemCount = ({ stock = 10, initial = 1}) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
@@ -18,6 +18,11 @@ const ItemCount = ({ stock = 10, initial = 1, onAdd}) => {
             setCount(count - 1);
         }
     }
+
+    const onAdd = () => {
+        alert(`Añadiste al carrito ${count} productos`);
+    }
+    
 
     return (
         <div className="itemCount">
