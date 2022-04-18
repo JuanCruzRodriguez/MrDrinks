@@ -1,22 +1,23 @@
 import logo from '../assets/mrdrink.png';
-import CartWidget from '../components/CartWidget';
+import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom' 
 
 const NavBar = () => {
     return (
         <div className="App">
             <header>
-                <a href="#"><img src= {logo} alt="logo de Mr Drinks" width="70%" className="logo" /></a>
+                <Link to='/'><img src= {logo} alt="logo de Mr Drinks" width="70%" className="logo" /></Link>
                     <nav className='categories'>
                         <ul>
-                            <li><a href="#">Vinos</a></li>
-                            <li><a href="#">Espumantes</a></li>
-                            <li><a href="#">Whiskies</a></li>
-                            <li><a href="#">Gin</a></li>
-                            <li><a href="#">Vodka</a></li>
-                            <li><a href="#">Aperitivos</a></li>
-                            <li><a href="#">Licores</a></li>
-                            <li><a href="#">Cervezas</a></li>
-                            <li><a href="#">Sin alcohol</a></li>
+                            <Link to='/categoria/vinos'><li>Vinos</li></Link>
+                            <Link to='/categoria/espumantes'><li>Espumantes</li></Link>
+                            <Link to='/categoria/whiskies'><li>Whiskies</li></Link>
+                            <Link to='/categoria/gin'><li>Gin</li></Link>
+                            <Link to='/categoria/vodka'><li>Vodka</li></Link>
+                            <Link to='/categoria/aperitivos'><li>Aperitivos</li></Link>
+                            <Link to='/categoria/licores'><li>Licores</li></Link>
+                            <Link to='/categoria/cervezas'><li>Cervezas</li></Link>
+                            <Link to='/categoria/sin-alcohol'><li>Sin alcohol</li></Link>
                         </ul>
                     </nav>
                     <div className='buttons'>

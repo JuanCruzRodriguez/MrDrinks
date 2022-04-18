@@ -20,7 +20,7 @@ const ItemCount = ({ stock = 10, initial = 1}) => {
     }
 
     const onAdd = () => {
-        alert(`Añadiste al carrito ${count} productos`);
+        alert(`Añadiste ${count} productos al carrito`);
     }
     
 
