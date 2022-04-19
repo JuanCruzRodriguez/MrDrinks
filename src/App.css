@@ -1,6 +1,6 @@
 body{
   background-color: white;
-  color: rgb(40, 40, 40)  ;
+  color: rgb(40, 40, 40);
 }
 
 .App{
@@ -127,7 +127,8 @@ ul{
 }
 
 .productos{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: 2em ;
 }
 
@@ -166,8 +167,7 @@ ul{
 }
 
 .precioStock{
-  padding-right: 35em;
-  padding-top: 10em;
+  padding: 2em 10em;
   display: flex;
   flex-direction: column;
 }
@@ -181,7 +181,31 @@ ul{
   padding-left: 0.5em;
 }
 
+.descripcionProducto{
+  padding-left: 0.5em;
+  font-size: 1.2em;
+}
+
 .stockProducto{
   font-size: 1em;
   margin-left: 1em;
+}
+
+.buttonIrCarrito button{
+  font-size: 1em;
+  display: flex;
+  height: 2.5em;
+  margin: 0 1em;
+  padding: 0 1em;
+  border-radius: 100px ;
+  background-color: rgb(40, 40, 40);
+  border: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttonIrCarrito{
+  text-decoration: none;
 }

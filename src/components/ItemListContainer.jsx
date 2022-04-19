@@ -26,9 +26,7 @@ const ItemListContainer = () => {
         alert(`Añadiste ${count} productos al carrito`);
     }
     return (
-        <>
-            <ItemList items={datos} />
-        </>
+        <ItemList items={datos} />
     );
 }
 
