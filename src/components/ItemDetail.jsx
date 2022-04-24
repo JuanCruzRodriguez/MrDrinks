@@ -10,7 +10,7 @@ const ItemDetail = ({ item }) => {
     const onAdd = (qty) => {
         alert("Añadiste " + qty + " productos al carrito");
         setItemCount(qty);
-        test.addToCart(item, qty);
+        test.añadirAlCarrito(item, qty);
     }
 
     return (
@@ -24,7 +24,7 @@ const ItemDetail = ({ item }) => {
                 </div>
                 <div className="precioStock">
                     <p className="descripcionProducto">{item.descripcion}</p>
-                    <h3 className="precioProducto">{item.precio}</h3>
+                    <h3 className="precioProducto">$ {item.precio}</h3>
                     {
                     itemCount === 0
                     ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} className="stockProducto"/>
