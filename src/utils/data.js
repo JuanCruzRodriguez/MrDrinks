@@ -39,7 +39,7 @@ export const products = [
     nombre: "Cerveza Heineken sixpack 473ml ",
     imagen: {
         url: "https://beermarket.com.ar/wp-content/uploads/2020/11/Sixpack-Heineken-473ml-400x400.jpg"
-        },    imgAlt: "El regreso de Gulliver",
+        },    imgAlt: "Cerveza Heineken sixpack 473ml ",
     precio: 1100,
     stock: 5,
     descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra metus id posuere vestibulum. Nam vitae augue metus. Nulla facilisi. Sed auctor, velit ut lacinia dapibus, metus dolor feugiat purus, vitae rutrum eros diam eu libero. Integer sit amet dictum lacus. Duis a libero eu lacus suscipit semper. Nullam consequat est id feugiat tempor. Nulla congue, metus a ornare efficitur, massa massa volutpat felis, ut ultrices nulla dui in nunc. Nulla feugiat tortor neque, eu pretium justo auctor vel. Nullam eleifend aliquet tempor. Duis eu tellus tortor. Donec vitae volutpat elit, in accumsan nulla. Vestibulum molestie, felis in auctor placerat, enim nisi pretium augue, eu convallis magna lacus non enim. Integer tempus velit vitae erat tempor, at gravida ipsum dignissim. Proin mollis posuere maximus.",

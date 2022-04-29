@@ -12,7 +12,7 @@ const CartContextProvider = ({ children }) => {
                 ...cartList,
                 {
                     idItem: item.id,
-                    imagenItem: item.imagen.url,
+                    imagenItem: item.imagen,
                     imgAltItem: item.imgAlt,
                     nombreItem: item.nombre,
                     precioItem: item.precio,
