@@ -290,3 +290,52 @@ ul{
   transition-duration: 400ms;
   cursor: pointer;
 }
+
+.resumenCompra{
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 40em;
+  padding: 0.5em 1.5em 2em 1.5em;
+  border: solid;
+  align-items: center;
+}
+
+.resumenDeCompra{
+  display: flex;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.resumenDeCompra p{
+  padding: 0 0.5em;
+}
+
+.total{
+  display: flex;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.total p{
+  padding: 0 0.5em;
+}
+
+.buttonConfirmarCompra{
+  font-size: 1em;
+  display: flex;
+  height: 2.5em;
+  margin: 0 10em;
+  padding: 0 1em;
+  border-radius: 100px ;
+  background-color: rgb(40, 40, 40);
+  border: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonConfirmarCompra:hover{
+  background-color: rgb(100, 100, 100);
+  transition-duration: 400ms;
+  cursor: pointer;
+}

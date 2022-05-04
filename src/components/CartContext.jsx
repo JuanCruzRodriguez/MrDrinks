@@ -44,8 +44,8 @@ const CartContextProvider = ({ children }) => {
     }
 
     const subtotal = () => {
-        let totalItem = cartList.map(item => totalItem(item.idItem));
-        return totalItem.reduce((previousValue, currentValue) => previousValue + currentValue);
+        let totalPorItem = cartList.map(item => totalItem(item.idItem));
+        return totalPorItem.reduce((previousValue, currentValue) => previousValue + currentValue);
     }
 
     const impuestos = () => {
