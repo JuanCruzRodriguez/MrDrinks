@@ -14,6 +14,9 @@ Es una tienda de bebidas online con envíos a todo el mundo!
 - Cervezas
 - Sin alcohol
 
+## Review 
+
+![reviewMrDrink](https://user-images.githubusercontent.com/95036047/167772172-ca1572d4-65ed-4e28-b39a-b990d122ad2f.gif)
 
 ## Instalación
 
