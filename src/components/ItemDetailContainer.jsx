@@ -1,17 +1,30 @@
 import { useState, useEffect } from "react";
-import customFetch from "../utils/customFetch";
 import ItemDetail from "./ItemDetail";
 import { useParams } from 'react-router-dom';
-import { firestoreFetchOne } from "../utils/firestoreFetch";
+import { doc, getDoc } from "firebase/firestore";
+import db from '../utils/firebaseConfig';
 
 const ItemDetailContainer = () => {
     const [dato, setDato] = useState({});
     const {idItem} = useParams();
 
     useEffect(() => {   
-        firestoreFetchOne(idItem)
-            .then(result => setDato(result))
-            .catch(err => console.log(err))
+        const firestoreFetchOne = async () => {
+            const docRef = doc (db, "products", idItem);
+            const docSnap = await getDoc(docRef);
+            
+            if (docSnap.exists()) {
+                return {
+                    id: idItem,
+                    ...docSnap.data()
+                }
+            } else {
+                console.log("No se encontró el producto");
+            }
+        }
+        firestoreFetchOne()
+            .then (result => setDato (result))
+            .catch (error =>console.log (error))
     }, []);
     
     return (

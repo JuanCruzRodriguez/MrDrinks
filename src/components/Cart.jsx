@@ -3,6 +3,7 @@ import { useContext} from 'react';
 import { CartContext } from './CartContext';
 import { collection, doc, setDoc, serverTimestamp, updateDoc, increment } from "firebase/firestore";
 import db from '../utils/firebaseConfig';
+import Swal from "sweetalert"
 
 const Cart = () => {
     const test = useContext(CartContext);
@@ -33,17 +34,22 @@ const Cart = () => {
         console.log(orden);
 
         const createOrderInFirestore = async () => {
-            // Add a new document with a generated id
             const newOrderRef = doc(collection(db, "orders"));
             await setDoc(newOrderRef, orden);
             return newOrderRef;
         }
         
         createOrderInFirestore()
-            .then(result => alert('Your order has been created. Please take note of the ID of your order.\n\n\nOrder ID: ' + result.id + '\n\n'))
+            .then(result =>  Swal({
+                title: 'Su orden ha sido creada con éxito. Por favor guarde el ID de su pedido. ',
+                text: 'ID: ' + result.id,
+                icon: 'success',
+                button: 'Genial!',
+                color: "black",
+            }))
             .catch(err => console.log(err));
         
-        test.eliminarList();
+        test.emptyCart();
     }
 
     return(
@@ -54,7 +60,7 @@ const Cart = () => {
                 <Link to='/'><button>Continuar comprando</button></Link>
                     {
                         (test.cartList.length > 0)
-                        ? <button onClick={test.eliminarList}>Borrar todos los productos</button>
+                        ? <button onClick={test.emptyCart}>Borrar todos los productos</button>
                         : <p>El carrito esta vacío</p>
                     }
             </div>

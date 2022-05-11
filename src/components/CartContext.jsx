@@ -24,7 +24,7 @@ const CartContextProvider = ({ children }) => {
         }
     }
     
-    const eliminarList = () => {
+    const emptyCart = () => {
         setCartList([]);
     }
 
@@ -57,7 +57,7 @@ const CartContextProvider = ({ children }) => {
     }
 
     return (
-        <CartContext.Provider value={{cartList, añadirAlCarrito, eliminarList, eliminarItem, notificacionCantidad, totalItem, subtotal, impuestos, total}}>
+        <CartContext.Provider value={{cartList, añadirAlCarrito, emptyCart, eliminarItem, notificacionCantidad, totalItem, subtotal, impuestos, total}}>
             { children }
         </CartContext.Provider>
     );

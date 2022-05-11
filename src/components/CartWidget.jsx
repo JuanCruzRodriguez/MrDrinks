@@ -16,7 +16,6 @@ const CartWidget = () => {
                     ?<div className="notificacionCarrito">{test.notificacionCantidad()}</div>
                     : <div></div>
                 }
-                
             </button>
         </Link>
     );

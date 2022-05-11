@@ -16,7 +16,8 @@ const ItemDetail = ({ item }) => {
     return (
         <>
         {
-        item && item.imagen ? 
+            item && item.imagen 
+            ? 
             <div className="divProducto">
                 <div className="tituloImagen">
                     <h3 className="tituloProducto">{item.nombre}</h3>
@@ -33,7 +34,7 @@ const ItemDetail = ({ item }) => {
                     <h3 className="stockProducto">Quedan disponibles {item.stock} unidades en stock</h3>
                 </div>
             </div>
-        : <p>Cargando...</p>    
+            : <p>Cargando...</p>    
         }
         </>
     );
