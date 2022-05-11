@@ -340,37 +340,38 @@ ul{
   cursor: pointer;
 }
 
-.footer nav h4{
+footer nav h4{
   font-size: 1em;
   color: rgb(180, 180, 180);
   align-items: center;
   padding-left: 2em;
 }
 
-.footer nav a{
+footer nav a{
   color: rgb(180, 180, 180);
   text-decoration: none;
 }
 
-.footer nav a:hover{
+footer nav a:hover{
   text-decoration: underline;
 }
 
-.footer nav ul li{
+footer nav ul li{
   color: rgb(180, 180, 180);
 }
 
-.footer{
+footer{
+  align-items: flex-end;
   display: flex;
   background-color: rgb(40, 40, 40);
   flex-direction: row;
   justify-content: space-around;
-
   padding-top: 4em;
   padding-bottom: 4em;
   padding-left: 10%;
   padding-right: 10%;
   align-items: center;
+  margin-top: 35%;
 }
 
 .redes{

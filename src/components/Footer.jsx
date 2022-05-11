@@ -1,8 +1,6 @@
-import { Link } from 'react-router-dom' 
-
 const Footer = () => {
     return (
-        <div className='footer'>
+        <footer>
             <nav className="redes">
                 <a href="https://web.whatsapp.com/send?phone=+5492215137609&text=Hola%20Coderhouse!%20C%C3%B3mo%20est%C3%A1n?%20Tengo%20una%20consulta%20sobre" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -42,7 +40,7 @@ const Footer = () => {
                 </ul>
             </nav>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.715524370883!2d-58.43227259999999!3d-34.586064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoderhouse%20Argentina!5e0!3m2!1sen!2sar!4v1652238914074!5m2!1sen!2sar" width="300" height="300" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        </footer>
     );
 };
 
