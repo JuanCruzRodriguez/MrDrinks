@@ -24,10 +24,12 @@ Es una tienda de bebidas online con envíos a todo el mundo!
   npm install
 ```
 
-3) Por ultimo, para ver el proyecto utilizar el comando:
+3) Por ultimo, para abrir el proyecto utilizar el comando:
 ```bash
   npm start
 ```
+ Luego de estos pasos se abrirá una pestaña en su navegador con el siguiente link http://localhost:3000
+
 ## Autor
 - **Juan Cruz Rodríguez**
 
